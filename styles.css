@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    margin: 0; 
+    background-color: black;
+    height: 200vh;
+}
+
+.container {
+    position: fixed;
+    top: 38%;
+    left: 45%;
+    transform: translate(-1%, -1%);
+    transition: top 1.5s, left 1.5s; 
+
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 100vh;
+}
+
+.container.move-top-left {
+    top: 0;
+    left: 0;
+}
+
+.container .icon {
+    width: 100px;
+    height: 100px;
+}
+
+.container .icon path {
+    fill: transparent; 
+    stroke: #90FADB; 
+    stroke-width: 0.5;
+    stroke-dasharray: 65; 
+    stroke-dashoffset: 0;
+}
+
+@keyframes animate-logo {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    10% {
+        stroke-dashoffset: 20; 
+    }
+    80% {
+        stroke-dashoffset: 110; 
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 130; 
+        fill: #90FADB;
+    }
+}
