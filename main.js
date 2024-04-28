@@ -23,7 +23,7 @@ window.addEventListener("scroll", function() {
     var page1 = document.getElementById("page1");
     var titleBar = document.getElementById("titleBar");
 
-    if (window.scrollY > page1.clientHeight) {
+    if (window.scrollY > (page1.clientHeight)*0.4) {
         titleBar.style.display = "block"; // Show the title bar
     } else {
         titleBar.style.display = "none"; // Hide the title bar

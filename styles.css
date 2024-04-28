@@ -6,7 +6,6 @@ body {
     flex-direction: column;
 }
 
-/* Page 1 */
 .container {
     position: fixed;
     transform: translate(-1%, -1%);
@@ -94,21 +93,58 @@ body {
     }
 }
 
-/* Page 2 */
 #page2 {
     font-family: 'Montserrat', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
 
-h1 {
+#titleBar {
     color: white;
-    font-size: 300%;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000; 
-    background-color: wheat;
+    display: flex;
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center; /* Vertically center the items */
     margin-left: 10%;
+}
+
+#titleBar h1 {
+    font-size: 300%;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Fix the navigation in its position */
+    top: 50%; /* Align it to the vertical center */
+    right: 15%;
+    transform: translateY(-50%); 
+}
+
+.navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navBar li {
+    margin: 0 10px; 
+}
+
+.navBar li a {
+    color: #333; /* Text color */
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition on hover */
+
+}
+
+.navBar li a:hover {
+    color: #555; /* Darker color on hover */
 }
