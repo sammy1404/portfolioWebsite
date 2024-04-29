@@ -4,6 +4,7 @@ body {
     background-color: black;
     height: 400vh;
     flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -17,6 +18,8 @@ body {
     left: calc(50% - 70px);
     padding: 20px;
 }
+
+
 
 .container.move-top-left {
     top: 0;
@@ -125,7 +128,7 @@ nav{
 
 label.logo{
     color: white;
-    font-size: 300%;
+    font-size: 4vw;
     line-height: 80px;
     font-weight: bold;
 }
@@ -148,7 +151,7 @@ nav ul li{
 nav ul li a{
     color: #333;
     font-weight: 600;
-    font-size: 150%;
+    font-size: 2vw;
     border-radius: 10px;
     padding: 15px 0;
     list-style: none;
@@ -250,3 +253,31 @@ nav ul li a:hover{
     }
 }
 
+section{
+    height: 100vh;
+}
+#intro{
+    margin-left: 15%;
+}
+#intro h3{
+    color: rgba(255, 255, 255, 0.592);
+    font-size: 4vw;
+    padding-bottom: 1%;
+    margin: 0;
+}
+#intro h2{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 4vw;
+    padding-bottom: 1%;
+    margin: 0;
+}
+
+.heading{
+    color: white;
+    font-size: 200%;
+
+}
+
+.description{
+    color: white;
+}
