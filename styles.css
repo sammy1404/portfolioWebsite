@@ -25,6 +25,8 @@ body {
 .container .icon {
     width: fit-content;
     height: fit-content;
+    z-index: 100;
+    margin-right: 10%;
 }
 
 .container .icon path {
@@ -110,6 +112,7 @@ body {
     position: fixed;
     justify-content: space-between;
     width: 90%;
+
     margin-right: 10%;
     transform: translateY(20%);
 }
@@ -169,6 +172,11 @@ nav ul li a:hover:before{
     width: 100%;
 }
 
+nav ul li.active a:before{
+    left: 50%;
+    transform: translateX(-50%);
+}   
+
 nav ul li a:hover{
     color: rgba(255, 255, 255, 0.435);
     transition: 1s;
@@ -190,14 +198,22 @@ nav ul li a:hover{
 @media(max-width: 952px){
     label.logo{
         font-size: 150%;
-        padding-left: 50px;
+        margin-left: 50px;
+        z-index: 0;
     }
     nav ul li a{
-        font-size:16px;
+        font-size:200%;
     }
     svg{
         height: 75px;
         width: 75px;
+
+    }
+    .container .icon {
+        width: fit-content;
+        height: fit-content;
+        z-index: 1;
+        background-color: black;
     }
 }
 
@@ -207,17 +223,18 @@ nav ul li a:hover{
     }
     ul{
         position: fixed;
-        width: 100%;
+        width: 90%;
         height: 100vh;
         background-color: black;
         top: 80px;
-        left: -110%;
+        left: -100%;
         text-align: center;
         transition: all 1s;
+
     }
     nav ul li{
         display: block;
-        transform: translateX(-15%);
+        transform: translateX(-7%);
     }
     nav ul li a{
         font-size: 20px;
@@ -228,6 +245,7 @@ nav ul li a:hover{
         color: #656565;
     }
     #check:checked ~ul{
-        left: 0;
+        left: -2%;
     }
 }
+

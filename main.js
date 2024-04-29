@@ -35,3 +35,5 @@ document.addEventListener("DOMContentLoaded", function() {
     var titleBar = document.getElementById("titleBar");
     titleBar.style.display = "none";
 });
+
+
