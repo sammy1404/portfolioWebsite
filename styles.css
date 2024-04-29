@@ -77,7 +77,6 @@ body {
 #page1-container {
     display: flex;
     height: 40%;
-    align-self: flex-end;
 }
 
 .fade-out {
@@ -110,6 +109,7 @@ body {
     justify-content: space-between; /* Distribute space between elements */
     align-items: center; /* Vertically center the items */
     margin-left: 10%;
+    background-color: wheat;
 }
 
 #titleBar h1 {
@@ -123,6 +123,11 @@ body {
     top: 50%; /* Align it to the vertical center */
     right: 15%;
     transform: translateY(-50%); 
+}
+
+.navBar {
+    display: inline;
+    float: right;
 }
 
 .navBar ul {
@@ -142,9 +147,74 @@ body {
     font-size: 150%;
     font-weight: bold;
     transition: color 0.3s; /* Smooth color transition on hover */
-
 }
 
 .navBar li a:hover {
     color: #555; /* Darker color on hover */
+}
+
+.checkbtn {
+    display: none; /* Initially hide the hamburger menu */
+    font-size: 30px;
+    color: #333;
+}
+
+.checkbtn label {
+    font-size: 30px;
+    color: #333;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+.checkbtn i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block; /* Display the hamburger menu when window size is less than 858px */
+    }
+
+    .navBar ul {
+        position: fixed; /* Fixed position to overlay on the content */
+        top: 80px; /* Align to the top of the page */
+        left: 0; /* Align to the left of the page */
+        background: #fff; /* Background color for the mobile menu */
+        width: 100%; /* Full width */
+        height: 100vh; /* Full height */
+        text-align: center;
+        display: none; /* Initially hide the menu */
+    }
+    
+    .navBar ul.show {
+        display: flex; /* Show the navBar ul when the checkbox is checked */
+        flex-direction: column; /* Arrange menu items in a column */
+        align-items: center; /* Align items to the center */
+        justify-content: center; /* Center content vertically */
+    }
+    
+    .navBar li {
+        margin: 20px 0; /* Add space between menu items */
+    }
+    
+    .navBar li a {
+        font-size: 24px;
+        text-decoration: none; /* Remove underlines from links */
+        color: #333; /* Text color */
+        transition: color 0.3s; /* Smooth color transition on hover */
+    }
+    
+    .navBar li a:hover {
+        color: #555; /* Darker color on hover */
+    }
+
+    #check:checked + .navBar ul {
+        display: flex; /* Show the menu when checkbox is checked */
+    }
 }
