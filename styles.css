@@ -169,6 +169,11 @@ nav ul li a:hover:before{
     width: 100%;
 }
 
+nav ul li a:hover{
+    color: rgba(255, 255, 255, 0.435);
+    transition: 1s;
+}
+
 .checkbtn{
     font-size: 30px;
     color: white;
