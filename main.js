@@ -18,15 +18,20 @@ window.addEventListener("scroll", function() {
 });
 
 // to hide the name thing
-
 window.addEventListener("scroll", function() {
     var page1 = document.getElementById("page1");
     var titleBar = document.getElementById("titleBar");
-    titleBar.style.display = "none";
 
-    if (window.scrollY > (page1.clientHeight)*0.4) {
+    if (window.scrollY > (page1.clientHeight) * 0.4) {
         titleBar.style.display = "block"; // Show the title bar
+        console.log("should display now")
     } else {
         titleBar.style.display = "none"; // Hide the title bar
     }
+});
+
+// Initially hide the titleBar
+document.addEventListener("DOMContentLoaded", function() {
+    var titleBar = document.getElementById("titleBar");
+    titleBar.style.display = "none";
 });
