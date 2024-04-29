@@ -138,20 +138,35 @@ nav ul li{
     line-height: 80px;
     margin: 0 5px;
     color: #333;
+    padding-right: 10px;
 }
 
 nav ul li a{
     color: #333;
+    font-weight: 600;
     font-size: 150%;
-    padding: 7px;
     border-radius: 10px;
+    padding: 15px 0;
     list-style: none;
     text-decoration: none;
+    position: relative;
+    padding-bottom: 5%;
 }
 
-a.active, a:hover{
-    background: #656565;
-    transition: 1s;
+nav ul li a:before{
+    content: '';
+    position: absolute;
+    height: 2.5px;
+    width: 0%;
+    background: rgba(255, 255, 255, 0.435);
+    bottom: 0;
+    left: 0;
+    transition: all 0.6s ease;
+}
+
+
+nav ul li a:hover:before{
+    width: 100%;
 }
 
 .checkbtn{
@@ -201,6 +216,7 @@ a.active, a:hover{
     }
     nav ul li a{
         font-size: 20px;
+        padding: 10px 0;
     }
     a:hover,a.active{
         background: none;
