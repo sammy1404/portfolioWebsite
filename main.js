@@ -37,4 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+window.addEventListener("DOMContentLoaded", function() {
+    console.log("Window width:", window.innerWidth, "Window height:", window.innerHeight);
+});
 
