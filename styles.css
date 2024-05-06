@@ -201,7 +201,7 @@ nav ul li a:hover{
 
 @media(max-width: 1125px){
     label.logo{
-        font-size: 150%;
+        font-size: 175%;
         margin-left: 3vw;
         z-index: 0;
     }
@@ -218,6 +218,9 @@ nav ul li a:hover{
     }
     .header h2{
         font-size: 8vw;
+    }
+    #titleBar{
+        transform: translateY(13%);
     }
 
 }
@@ -278,12 +281,25 @@ section{
 }
 #intro{
     margin-left: 15%;
-    background-color: wheat;
+}
+#intro {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 4s; /* Smooth transition */
+}
+
+#intro.appear {
+    opacity: 1; /* Make the section visible */
+    transform: translateY(-10%);
+}
+
+#intro.disappear{
+    opacity: 0;
 }
 
 #intro p{
     width: 70vw;
     font-size: 150%;
+    line-height: 150%;
 }
 .header h3{
     color: rgba(255, 255, 255, 0.487);

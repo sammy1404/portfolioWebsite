@@ -41,3 +41,16 @@ window.addEventListener("DOMContentLoaded", function() {
     console.log("Window width:", window.innerWidth, "Window height:", window.innerHeight);
 });
 
+
+window.addEventListener("scroll", function() {
+    var intro = document.getElementById("intro");
+
+    if (window.scrollY > 1) {
+        intro.classList.add("appear");
+    } else {
+        intro.classList.remove("appear");
+    }
+    if(this.window.scroll = window.innerHeight*0.9){
+        intro.classList.add("dissapear")
+    }
+})
