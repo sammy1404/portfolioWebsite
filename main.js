@@ -50,7 +50,7 @@ window.addEventListener("scroll", function() {
     } else {
         intro.classList.remove("appear");
     }
-    if(this.window.scroll = window.innerHeight*0.9){
+    if(this.window.scroll = window.innerHeight*0.1){
         intro.classList.add("dissapear")
     }
 })

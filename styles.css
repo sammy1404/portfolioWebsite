@@ -7,16 +7,17 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
 .container {
     position: fixed;
     transform: translate(-1%, -1%);
     transition: top 1.5s, left 1.5s; 
     width: fit-content;
-    height: fit-content;    
+    height: fit-content;   
+    transform: translateX(-7%); 
     top: calc(50% - 130px); 
     left: calc(50% - 70px);
     padding: 20px;
+    background-color: black;
 }
 
 
@@ -66,6 +67,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    transform: translateY(5vh);
 }
 
 .centerAlign {
@@ -82,7 +84,7 @@ body {
 
 #page1-container {
     display: flex;
-    margin-top: 10%;
+    margin-top: 10
 }
 
 .fade-out {
@@ -116,9 +118,9 @@ body {
     position: fixed;
     justify-content: space-between;
     width: 90%;
-
-    margin-right: 10%;
-    transform: translateY(20%);
+    padding-top: 2%;
+    padding-bottom: 0.3%;
+    background-color: black;
 }
 nav{
 
@@ -211,16 +213,20 @@ nav ul li a:hover{
         width: 75px;
 
     }
-    .container .icon {
+    .container {
         width: fit-content;
         height: fit-content;
-        z-index: 1;
+        position: fixed;
+        z-index: 99;
+        padding-right: 0;
+        padding-bottom: 1%;
     }
     .header h2{
         font-size: 8vw;
     }
     #titleBar{
-        transform: translateY(13%);
+        padding-top: 1.5%;
+        z-index: 10;
     }
 
 }
