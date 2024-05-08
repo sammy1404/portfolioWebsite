@@ -279,6 +279,9 @@ nav ul li a:hover{
     .container{
         transform: translateX(15%);
     }
+    #titleBar{
+        padding-top: 3%;
+    }
 }
 
 section{
